@@ -18,7 +18,8 @@
 
   width: 100%;
 
-  color: var(--ptf-color-black);
+  color: var(--ptf-color-white);
+  background-color: transparent;
 
   &.ptf-header--opaque {
     position: relative;
@@ -64,6 +65,8 @@
     &.ptf-navbar--sticky {
       animation: ptf_fade_in_down var(--ptf-transition-duration)
         var(--ptf-transition-easing) forwards;
+      background-color: #FAF9F7;
+      color: var(--ptf-color-black);
     }
 
     &.ptf-on-scroll-show {
@@ -85,7 +88,7 @@
   // solid navbar
   &,
   &.ptf-navbar--solid {
-    background-color: #FAF9F7;
+    // background-color: transparent;
 
     .ptf-header--style-5 & {
       background-color: #FAF9F7;

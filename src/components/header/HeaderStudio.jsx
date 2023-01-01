@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useMemo, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Search from "../form/Search";
 import DropdownMenu from "./menu/DropdownMenu";
 import MobileMenu from "./menu/MobileMenu";
@@ -23,14 +23,24 @@ const HeaderStudio = () => {
 
   window.addEventListener("scroll", changeBackground);
 
+  const { pathname } = useLocation();
+  const inRoot = useMemo(() => pathname === '/', [pathname]);
+
   return (
     <>
       <header className="ptf-header ptf-header--style-2 ptf-header--opaque">
         <div
           className={
-            navbar
-              ? "ptf-navbar ptf-navbar--main ptf-navbar--sticky ptf-navbar--fixed "
-              : "ptf-navbar ptf-navbar--main ptf-navbar--sticky"
+            // navbar
+            //   ? "ptf-navbar ptf-navbar--main ptf-navbar--sticky ptf-navbar--fixed "
+            //   : "ptf-navbar ptf-navbar--main ptf-navbar--sticky"
+            [
+              "ptf-navbar",
+              "ptf-navbar--main",
+              "ptf-navbar--sticky",
+              navbar && "ptf-navbar--fixed",
+              inRoot && "root",
+            ].filter(Boolean).join(" ")
           }
         >
           <div className="container-xxl">

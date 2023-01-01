@@ -1,3 +1,7 @@
+.top {
+  background-color: #443C8E;
+}
+
 /* SECTION: PAGE CONTACT
 -------------------------------------------- */
 
@@ -178,12 +182,11 @@
 .ptf-is--home-studio {
 
   section:first-of-type {
-    background-image: url(../../img/root/home.png);
-    background-color: #FAF9F7;
+    // background-image: url(../../img/root/home.png);
+    background-color: #443C8E;
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: contain;
-    animation: fadein 1s;
     @media (max-width: 575px) {
       background-image: none;
     }

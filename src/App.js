@@ -17,14 +17,15 @@ const App = () => {
   }, []);
   return (
     <>
-      <Helmet>
+
+      {/* <Helmet>
         <title>Yujin Lee</title>
         <meta name="description" content="Yujin Lee is a designer based in Seoul" />
         <meta
           name="keywords"
           content="agency, bootstrap 5, business, clean, corporate, creative, fullpage, minimal, modern, multipurpose, parallax, personal, photography, portfolio, showcase"
         />
-      </Helmet>
+      </Helmet> */}
       {/* End React Helmet for SEO */}
 
       {/* <AnimatedCursor

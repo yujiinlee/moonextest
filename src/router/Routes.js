@@ -41,7 +41,7 @@ import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 const Routes = () => {
   return (
     <>
-      <Router>
+      <Router basename="/eng">
         <ScrollTopBehaviour />
         <Switch>
           <Route exact path="/" component={HomeStudio} />

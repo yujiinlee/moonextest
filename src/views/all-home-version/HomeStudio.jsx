@@ -8,6 +8,13 @@ import FooterThree from "../../components/footer/FooterThree";
 import CopyRightThree from "../../components/footer/copyright/CopyRightThree";
 import ContactJarallax from "../../components/jarallax/ContactJarallax";
 import PortfolioFive from "../../components/portfolio/PortfolioFive";
+import heroimg from "../../assets/img/root/toptext.svg"
+import line1 from "../../assets/img/root/line1.svg"
+import line2 from "../../assets/img/root/line2.svg"
+import line3 from "../../assets/img/root/line3.svg"
+import line4 from "../../assets/img/root/line4.svg"
+import line5 from "../../assets/img/root/line5.svg"
+import stroke from "../../assets/img/root/stroke.svg"
 
 const HomeStudio = () => {
   return (
@@ -17,46 +24,69 @@ const HomeStudio = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderStudio />
-      {/* End Header Agency */}
+      <div className="top">
 
-      <div className="ptf-site-wrapper__inner">
-        <div className="ptf-main">
-          <div className="ptf-page ptf-page--home-studio">
-            {/*=============================================
-            Start Service Section 
-            ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
+        <HeaderStudio />
+        {/* End Header Agency */}
+
+        <div className="ptf-site-wrapper__inner">
+          <div className="ptf-main">
+            <div className="ptf-page ptf-page--home-studio">
+              {/*=============================================
+              Start Service Section 
+              ============================================== */}
+              <section>
+                {/* <!--Spacer--> */}
+                <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "3.125rem", "--ptf-md": "1.5625rem" }}
+                ></div>
+                <div className="container-xxl">
+                  {/* <!--Animated Block--> */}
+                  <div
+                    className="ptf-animated-block"
+                    data-aos="fade"
+                    data-aos-delay="0"
+                  >                  
+                  </div>
+                  {/* End <!--Animated Block--> */}
+
+                  {/* <!--Spacer--> */}
+                  {/* <div
+                    className="ptf-spacer"
+                    style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
+                  ></div> */}
+
+                  {/* <!--Animated Block--> */}
+                  <div>
+                    <div className="text">
+                      <img class="heroimg" src={line1}></img>
+                    </div>
+                    <img class="stroke" src={stroke}></img>
+                      <div className="text">
+                        <img class="heroimg" src={line2}></img>
+                      </div>
+                      <img class="stroke" src={stroke}></img>
+                      <div className="text">
+                        <img class="heroimg" src={line3}></img>
+                      </div>
+                      <img class="stroke" src={stroke}></img>
+                      <div className="text">
+                        <img class="heroimg" src={line4}></img>
+                      </div>
+                      <img class="stroke" src={stroke}></img>
+                      <div className="text">
+                        <img class="heroimg" src={line5}></img>
+                      </div>
+                      
+                    {/* <img class="heroimg" src={heroimg}></img> */}
+                  </div>
+                </div>
+
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "3.125rem", "--ptf-md": "1.5625rem" }}
               ></div>
-              <div className="container-xxl">
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >                  
-                </div>
-                {/* End <!--Animated Block--> */}
-
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
-                ></div>
-
-                {/* <!--Animated Block--> */}
-                <div>
-                  <h1 className="fz-120 fz-90--lg fz-60--md lh-1p1 hero">
-                    <div className="line-01">Yujin Lee,</div>
-                    <div className="line-02">Product Designer</div>
-                    <div className="line-03">Based in Seoul.</div>
-                  </h1>
-                </div>
-              </div>
             </section>
 
             {/*=============================================
@@ -226,6 +256,7 @@ const HomeStudio = () => {
         {/* End .ptf-main */}
       </div>
       {/* End .ptf-site-wrapper__inner */}
+    </div>  
 
       {/*=============================================
         Start Footer Section 

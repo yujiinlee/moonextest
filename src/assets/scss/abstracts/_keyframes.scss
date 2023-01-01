@@ -259,26 +259,20 @@
 	}
   }
 
-  .line-01 {
+  .stroke {
+	width: 100%;
 	@media all and (min-width: 768px){
-		animation: outer-left-01 1s 1s ease both,
-		text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+		animation: fadein 2s cubic-bezier(0.5, 0, 0.1, 1) both;
 	}
   }
 
-  .line-02 {
+  .text {
+	width: 100%;
 	@media all and (min-width: 768px){
-		animation: outer-left-02 1s 1s ease both,
-		text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+		animation: text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 	}
   }
 
-  .line-03 {
-	@media all and (min-width: 768px){
-		animation: outer-left-03 1s 1s ease both,
-		text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-	}
-  }
 
   @keyframes fadein {
     from {
